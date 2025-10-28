@@ -1,7 +1,7 @@
 module "bucket" {
   source = "../../modules/bucket/"
 
-  bucket_name      = "tfmaestro-maintenance-page"
+  bucket_name      = "tfmaestro-maintenance-page-dr-version"
   region           = "us-east-1"
   force_destroy    = true
   versioning       = true

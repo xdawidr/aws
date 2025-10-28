@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "terraform_state" {
-  bucket_prefix = "terraform-state-${var.environment}"
+  bucket_prefix = "terraform-state-${var.environment}-271025123"
   force_destroy = var.force_destroy
 
   tags = {
@@ -40,7 +40,7 @@ resource "aws_s3_bucket_lifecycle_configuration" "terraform_state_lifecycle" {
 }
 
 resource "aws_s3_bucket" "log_bucket" {
-  bucket = "log-state-${var.environment}"
+  bucket = "log-state-${var.environment}-271025123"
 
   tags = {
     environment = var.environment
